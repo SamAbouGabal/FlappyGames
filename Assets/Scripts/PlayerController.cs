@@ -1,12 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rb;
+    private bool isDead;
     public float jumpForce = 0.5f;
     
     void Start()
@@ -18,6 +21,10 @@ public class PlayerController : MonoBehaviour
     
    void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             if (_rb.simulated)
@@ -30,4 +37,17 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+   private void OnCollisionEnter2D(Collision2D other)
+   {
+       StartCoroutine(Co_OnDeath());
+   }
+
+   IEnumerator Co_OnDeath()
+   {
+       isDead = true;
+       yield return new WaitForSeconds(3);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+       
+   }
 }
