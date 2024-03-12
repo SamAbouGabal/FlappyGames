@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 88f64fee3f102c142a400a21cdc0b80c
+  - enabled: 1
     path: Assets/Scenes/RotatingCubeScene.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   m_configObjects:
