@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
             return;
         }
 
-        contentRect = GetComponentInChildren<ScrollRect>().content; 
+        contentRect = GetComponentInParent<ScrollRect>().content; 
 
         // Loop through colors and instantiate items
         for (int i = 0; i < itemColors.Length; i++)
