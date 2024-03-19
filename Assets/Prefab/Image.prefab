@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4891779559112040347}
   - component: {fileID: 55003454072370943}
   m_Layer: 5
-  m_Name: Image Blue
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
