@@ -11,6 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RotatingCubeScene.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
+  - enabled: 1
+    path: Assets/Scenes/GravityScene.unity
+    guid: f9c8c160ab5a7a144af8b65165b998f2
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 444257a4e9a09364fa6dbf9df595439f,
+      type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: bdcbfad8732f1474384c9b7d1b8947aa, type: 2}

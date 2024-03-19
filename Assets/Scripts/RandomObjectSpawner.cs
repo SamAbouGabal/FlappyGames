@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -32,5 +29,10 @@ public class RandomObjectSpawner : MonoBehaviour
     {
         var o = GameObject.CreatePrimitive(GetRandomPrimitiveType());
         o.AddComponent<Rigidbody>();
+    }
+
+    void ChangeGravity()
+    {
+        
     }
 }
