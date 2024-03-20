@@ -19,6 +19,7 @@ public class Item : MonoBehaviour, IBeginDragHandler, IDragHandler
     public void OnBeginDrag(PointerEventData eventData)
     {
         // we need to create a canvas and put the item under that canvas so it can be freely moved
+        
     }
 
     public void OnDrag(PointerEventData eventData)
